@@ -1,5 +1,7 @@
+@import "./utils/variables.scss";
 @import "./base/reset";
-@import "./layout/footer";
-@import "./layout/header";
+@import "./base/wrapper";
 @import "./layout/navigation.scss";
+@import "./layout/header";
 @import "./layout/content";
+@import "./layout/footer";
