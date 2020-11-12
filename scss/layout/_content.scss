@@ -1,10 +1,14 @@
 .mainContent {
   padding-top: 80px;
+  padding: $page-padding;
+  width: $page-width;
 }
 .mainHeader {
   display: flex;
   justify-content: center;
   font-size: 50px;
+  font-family: $defaultFontFamily;
+  padding-top: 20px;
 }
 .navForms {
   display: flex;
@@ -19,11 +23,48 @@ body {
   width: 200px;
   height: auto;
 }
+
 .linksRow {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 30px;
 }
 .shortLink {
   height: 200px;
+}
+.contentTitle {
+  font-size: 25px;
+  padding-bottom: 25px;
+}
+.contentBox {
+  margin-bottom: 20px;
+  max-width: 200px;
+}
+.bg-hover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 99%;
+  opacity: 0;
+  transition: all 0.2s linear;
+  display: block;
+}
+.imgBox:hover .bg-hover {
+  opacity: 1;
+}
+.imgBox {
+  position: relative;
+}
+.textLink {
+  text-decoration: none;
+  color: black;
+}
+.textLink:hover {
+  color: rgb(60, 60, 255);
 }

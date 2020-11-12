@@ -1,8 +1,8 @@
 body {
-  background: rgba(128, 128, 128, 0.425); }
+  background: rgba(128, 128, 128, 0.125); }
 
 .footer {
-  background: #1b1113; }
+  background: rgba(18, 9, 32, 0.815); }
 
 html,
 body,
@@ -108,23 +108,36 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.wrapper {
-  max-width: 1200px;
+.page {
   margin: auto; }
 
 .navBar {
   background-color: white;
-  width: 100%;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  padding: 15px 600px;
+  width: 1100px; }
+
+.navLink {
+  text-decoration: none;
+  padding: 30px 20px;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif, black; }
+
+.navLink:hover {
+  border-bottom: solid 2px; }
 
 .mainContent {
-  padding-top: 80px; }
+  padding-top: 80px;
+  padding: 15px 600px;
+  width: 1100px; }
 
 .mainHeader {
   display: flex;
   justify-content: center;
-  font-size: 50px; }
+  font-size: 50px;
+  font-family: Arial, Helvetica, sans-serif, black;
+  padding-top: 20px; }
 
 .navForms {
   display: flex;
@@ -133,7 +146,7 @@ table {
   height: 30px; }
 
 body {
-  background: rgba(128, 128, 128, 0.425); }
+  background: rgba(128, 128, 128, 0.125); }
 
 .imgLink {
   width: 200px;
@@ -141,12 +154,62 @@ body {
 
 .linksRow {
   display: flex;
-  justify-content: space-between;
-  padding-bottom: 30px; }
+  justify-content: space-between; }
 
 .shortLink {
   height: 200px; }
 
+.contentTitle {
+  font-size: 25px;
+  padding-bottom: 25px; }
+
+.contentBox {
+  margin-bottom: 20px;
+  max-width: 200px; }
+
+.bg-hover {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 99%;
+  opacity: 0;
+  transition: all 0.2s linear;
+  display: block; }
+
+.imgBox:hover .bg-hover {
+  opacity: 1; }
+
+.imgBox {
+  position: relative; }
+
+.textLink {
+  text-decoration: none;
+  color: black; }
+
+.textLink:hover {
+  color: #3c3cff; }
+
 .footer {
-  background: #1b1113;
-  color: white; }
+  background: rgba(18, 9, 32, 0.815);
+  color: white;
+  padding: 15px 600px;
+  width: 1100px;
+  display: flex;
+  justify-content: space-between;
+  height: 300px; }
+
+.footerLogo {
+  height: 20px;
+  width: auto;
+  padding: 100px 0; }
+
+.topFooter {
+  display: flex;
+  justify-content: space-between; }

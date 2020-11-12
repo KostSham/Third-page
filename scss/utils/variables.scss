@@ -1,8 +1,12 @@
-$background-color: rgba(128, 128, 128, 0.425);
+$background-color: rgba(128, 128, 128, 0.125);
 body {
   background: $background-color;
 }
-$footerbg-color: rgb(27, 17, 19);
+$footerbg-color: rgba(18, 9, 32, 0.815);
 .footer {
   background: $footerbg-color;
 }
+$page-padding: 15px 600px;
+$page-width: 1100px;
+
+$defaultFontFamily: Arial, Helvetica, sans-serif, black;

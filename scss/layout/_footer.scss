@@ -1,4 +1,18 @@
 .footer {
   background: $footerbg-color;
   color: white;
+  padding: $page-padding;
+  width: $page-width;
+  display: flex;
+  justify-content: space-between;
+  height: 300px;
+}
+.footerLogo {
+  height: 20px;
+  width: auto;
+  padding: 100px 0;
+}
+.topFooter {
+  display: flex;
+  justify-content: space-between;
 }
