@@ -1,7 +1,11 @@
 .mainContent {
   padding-top: 80px;
-  padding: $page-padding;
-  width: $page-width;
+  // padding: $page-padding;
+  // width: $page-width;
+  width: 100%;
+  max-width: 1152px;
+  z-index: 1;
+  margin: 0px auto;
 }
 .mainHeader {
   display: flex;
