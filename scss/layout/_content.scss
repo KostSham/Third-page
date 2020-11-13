@@ -1,18 +1,18 @@
-.mainContent {
+.main__Content {
   padding-top: 80px;
   width: 100%;
   max-width: 1152px;
   z-index: 1;
   margin: 0px auto;
 }
-.mainHeader {
+.main__Header {
   display: flex;
   justify-content: center;
   font-size: 50px;
   font-family: $defaultFontFamily;
   padding-top: 20px;
 }
-.navForms {
+.nav__Forms {
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
@@ -21,23 +21,24 @@
 body {
   background: $background-color;
 }
-.imgLink {
+.img__Link {
   width: 200px;
   height: auto;
 }
 
-.linksRow {
+.links__Row {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
-.shortLink {
+.short__Link {
   height: 200px;
 }
-.contentTitle {
+.content__Title {
   font-size: 25px;
   padding-bottom: 25px;
 }
-.contentBox {
+.content__Box {
   margin-bottom: 20px;
   max-width: 200px;
 }
@@ -60,16 +61,33 @@ body {
   transition: all 0.2s linear;
   display: block;
 }
-.imgBox:hover .bg-hover {
+.img__Box:hover .bg-hover {
   opacity: 1;
 }
-.imgBox {
+.img__Box {
   position: relative;
 }
-.textLink {
+.text__Link {
   text-decoration: none;
   color: black;
 }
-.textLink:hover {
+.text__Link:hover {
   color: rgb(60, 60, 255);
+}
+@media (max-width: 375px) {
+  .content__Box {
+    padding-left: 25%;
+  }
+  .main__Header {
+    font-size: 30px;
+  }
+  .content__Title {
+    padding-left: 17%;
+  }
+  .main__Content {
+    padding: 0;
+  }
+  .short_Title {
+    padding-left: 28%;
+  }
 }

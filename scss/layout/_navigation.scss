@@ -1,20 +1,20 @@
-.navBar {
+.nav__Bar {
   width: 1150px;
   display: flex;
   justify-content: space-between;
   height: 40px;
   padding-top: 30px;
 }
-.navLogo {
+.nav__Logo {
   zoom: 0.8;
 }
-.navLink {
+.nav__Link {
   text-decoration: none;
   padding: 20px 20px;
   font-size: 18px;
   font-family: $defaultFontFamily;
 }
-.navLink:hover {
+.nav__Link:hover {
   border-bottom: solid 2px;
 }
 .top-container {
@@ -25,4 +25,14 @@
   border-bottom: 1px solid rgb(223, 226, 230);
   display: flex;
   justify-content: center;
+}
+@media (max-width: 375px) {
+  .nav__Logo {
+    zoom: 0.5;
+    padding-left: 10px;
+  }
+  .nav__Link {
+    font-size: 12px;
+    padding: 20px 10px;
+  }
 }

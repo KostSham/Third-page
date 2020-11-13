@@ -108,23 +108,23 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-.navBar {
+.nav__Bar {
   width: 1150px;
   display: flex;
   justify-content: space-between;
   height: 40px;
   padding-top: 30px; }
 
-.navLogo {
+.nav__Logo {
   zoom: 0.8; }
 
-.navLink {
+.nav__Link {
   text-decoration: none;
   padding: 20px 20px;
   font-size: 18px;
   font-family: Arial, Helvetica, sans-serif, black; }
 
-.navLink:hover {
+.nav__Link:hover {
   border-bottom: solid 2px; }
 
 .top-container {
@@ -135,21 +135,29 @@ table {
   display: flex;
   justify-content: center; }
 
-.mainContent {
+@media (max-width: 375px) {
+  .nav__Logo {
+    zoom: 0.5;
+    padding-left: 10px; }
+  .nav__Link {
+    font-size: 12px;
+    padding: 20px 10px; } }
+
+.main__Content {
   padding-top: 80px;
   width: 100%;
   max-width: 1152px;
   z-index: 1;
   margin: 0px auto; }
 
-.mainHeader {
+.main__Header {
   display: flex;
   justify-content: center;
   font-size: 50px;
   font-family: Arial, Helvetica, sans-serif, black;
   padding-top: 20px; }
 
-.navForms {
+.nav__Forms {
   display: flex;
   justify-content: space-between;
   padding: 30px 0;
@@ -158,22 +166,23 @@ table {
 body {
   background: rgba(128, 128, 128, 0.125); }
 
-.imgLink {
+.img__Link {
   width: 200px;
   height: auto; }
 
-.linksRow {
+.links__Row {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  flex-wrap: wrap; }
 
-.shortLink {
+.short__Link {
   height: 200px; }
 
-.contentTitle {
+.content__Title {
   font-size: 25px;
   padding-bottom: 25px; }
 
-.contentBox {
+.content__Box {
   margin-bottom: 20px;
   max-width: 200px; }
 
@@ -196,38 +205,51 @@ body {
   transition: all 0.2s linear;
   display: block; }
 
-.imgBox:hover .bg-hover {
+.img__Box:hover .bg-hover {
   opacity: 1; }
 
-.imgBox {
+.img__Box {
   position: relative; }
 
-.textLink {
+.text__Link {
   text-decoration: none;
   color: black; }
 
-.textLink:hover {
+.text__Link:hover {
   color: #3c3cff; }
+
+@media (max-width: 375px) {
+  .content__Box {
+    padding-left: 25%; }
+  .main__Header {
+    font-size: 30px; }
+  .content__Title {
+    padding-left: 17%; }
+  .main__Content {
+    padding: 0; }
+  .short_Title {
+    padding-left: 28%; } }
 
 .footer {
   background-color: #231e29;
   color: white;
   width: 100%;
-  height: 300px; }
+  height: 300px;
+  margin: 0 auto; }
 
-.footerLogo {
+.footer__Logo {
   height: 20px;
   width: auto;
   padding: 100px 0; }
 
-.topFooter {
+.top__Footer {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .right__PartTop {
   display: flex;
-  padding: 0 0 0 500px;
-  margin-top: 30px; }
+  justify-content: flex-end;
+  padding-top: 30px; }
 
 .footer__Link {
   color: white;
@@ -238,44 +260,79 @@ body {
 .footer__Link:hover {
   text-decoration: underline; }
 
-.footerLinks {
+.footer__Links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 150px;
   height: 60px; }
 
-.footerInf {
+.footer__Inf {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 200px;
   padding-top: 20px;
-  margin-bottom: 50px; }
+  padding-bottom: 50px; }
 
 .footer__Wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 1150px;
-  margin: 0 auto;
-  flex-wrap: wrap; }
+  max-width: 1150px;
+  margin: 0 auto; }
 
 .community__Link {
   padding-right: 5px; }
 
 .links__block {
-  margin-top: 7px; }
+  padding-top: 7px; }
 
 .down__Footer {
   display: flex;
   justify-content: space-between; }
 
 .down__FooterLink {
-  padding-left: 550px;
   width: 300px;
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-around; }
 
 .left_PartDown {
   width: 300px;
   padding-top: 20px; }
+
+@media (max-width: 375px) {
+  .footer__Logo {
+    zoom: 0.5; }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 220px; }
+  .down__Footer {
+    display: flex;
+    align-items: center;
+    font-size: 12px; }
+  .right__PartTop {
+    padding: 0; }
+  .footer__Link {
+    padding: 3px 0;
+    font-size: 12px; }
+  .footer__Inf {
+    padding: 50px 0;
+    font-size: 12px; }
+  .footer__Links {
+    padding-top: 40px;
+    padding-left: 10px; }
+  .left_PartDown {
+    padding: 0;
+    flex-direction: column;
+    width: 100px; }
+  .community__Link {
+    height: 5px;
+    zoom: 0.7; }
+  .down__FooterLink {
+    width: 100px; }
+  .left_PartDown {
+    width: 250px; }
+  .links__block {
+    padding-bottom: 5px; } }

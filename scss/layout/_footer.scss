@@ -3,20 +3,22 @@
   color: white;
   width: 100%;
   height: 300px;
+  margin: 0 auto;
 }
-.footerLogo {
+.footer__Logo {
   height: 20px;
   width: auto;
   padding: 100px 0;
 }
-.topFooter {
+.top__Footer {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .right__PartTop {
   display: flex;
-  padding: 0 0 0 500px;
-  margin-top: 30px;
+  justify-content: flex-end;
+  // padding: 0 0 0 500px;
+  padding-top: 30px;
 }
 .footer__Link {
   color: white;
@@ -27,45 +29,94 @@
 .footer__Link:hover {
   text-decoration: underline;
 }
-.footerLinks {
+.footer__Links {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 150px;
   height: 60px;
 }
-.footerInf {
+.footer__Inf {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 200px;
   padding-top: 20px;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 .footer__Wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 1150px;
+  max-width: 1150px;
   margin: 0 auto;
-  flex-wrap: wrap;
 }
 .community__Link {
   padding-right: 5px;
 }
 .links__block {
-  margin-top: 7px;
+  padding-top: 7px;
 }
 .down__Footer {
   display: flex;
   justify-content: space-between;
 }
 .down__FooterLink {
-  padding-left: 550px;
   width: 300px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .left_PartDown {
   width: 300px;
   padding-top: 20px;
+}
+@media (max-width: 375px) {
+  .footer__Logo {
+    zoom: 0.5;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 220px;
+  }
+  .down__Footer {
+    display: flex;
+
+    // justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+  }
+  .right__PartTop {
+    padding: 0;
+  }
+  .footer__Link {
+    padding: 3px 0;
+    font-size: 12px;
+  }
+  .footer__Inf {
+    padding: 50px 0;
+    font-size: 12px;
+  }
+  .footer__Links {
+    padding-top: 40px;
+    padding-left: 10px;
+  }
+  .left_PartDown {
+    padding: 0;
+    flex-direction: column;
+    width: 100px;
+  }
+  .community__Link {
+    height: 5px;
+    zoom: 0.7;
+  }
+  .down__FooterLink {
+    width: 100px;
+  }
+  .left_PartDown {
+    width: 250px;
+  }
+  .links__block {
+    padding-bottom: 5px;
+  }
 }
