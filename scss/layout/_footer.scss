@@ -2,10 +2,6 @@
   background-color: rgb(35, 30, 41);
   color: white;
   width: 100%;
-  // padding: $page-padding;
-  // width: $page-width;
-  // display: flex;
-  // justify-content: space-between;
   height: 300px;
 }
 .footerLogo {
@@ -15,38 +11,61 @@
 }
 .topFooter {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
-.right {
+.right__PartTop {
   display: flex;
-
-  justify-content: flex-end;
+  padding: 0 0 0 500px;
+  margin-top: 30px;
 }
-.footerLink {
+.footer__Link {
   color: white;
   text-decoration: none;
   padding: 20px 0;
   font-size: 18px;
 }
-.footerLink :hover {
-  text-decoration: solid white;
+.footer__Link:hover {
+  text-decoration: underline;
 }
 .footerLinks {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 150px;
+  height: 60px;
 }
 .footerInf {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 250px;
+  padding-left: 200px;
   padding-top: 20px;
+  margin-bottom: 50px;
 }
-.qwer {
+.footer__Wrapper {
   display: flex;
   justify-content: space-between;
-  left: 0px;
   width: 1150px;
   margin: 0 auto;
+  flex-wrap: wrap;
+}
+.community__Link {
+  padding-right: 5px;
+}
+.links__block {
+  margin-top: 7px;
+}
+.down__Footer {
+  display: flex;
+  justify-content: space-between;
+}
+.down__FooterLink {
+  padding-left: 550px;
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+.left_PartDown {
+  width: 300px;
+  padding-top: 20px;
 }
