@@ -101,23 +101,22 @@ body {
 }
 @media (max-width: 375px) {
   .content__Box {
-    padding-left: 7%;
+    padding-left: 15px;
   }
   .main__Header {
     font-size: 20px;
   }
   .content__Title {
-    padding-left: 17%;
+    padding-left: 70px;
   }
   .main__Content {
     padding: 0;
   }
   .short_Title {
-    padding-left: 28%;
+    padding-left: 110px;
   }
-  .nav__Forms {
-    .input__form {
-      width: 150px;
-    }
+
+  .input__form {
+    width: 150px;
   }
 }
