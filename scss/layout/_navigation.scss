@@ -26,6 +26,16 @@
   display: flex;
   justify-content: center;
 }
+@media (max-width: 510px) {
+  .nav__Logo {
+    zoom: 0.5;
+    padding-left: 10px;
+  }
+  .nav__Link {
+    font-size: 12px;
+    padding: 20px 10px;
+  }
+}
 @media (max-width: 375px) {
   .nav__Logo {
     zoom: 0.5;
